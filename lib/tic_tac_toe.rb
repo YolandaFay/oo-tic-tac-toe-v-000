@@ -36,7 +36,7 @@ class TicTacToe
     user_entry = gets.strip.to_i - 1
   
      if
-      valid_move?(board,user_entry) == true 
+      valid_move?(entry) == true 
       move(board,user_entry,current_player(board))
       display_board(board)
     else
