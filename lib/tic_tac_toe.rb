@@ -44,7 +44,7 @@ class TicTacToe
         user_entry = gets.strip.to_i - 1
       end
       move(user_entry,current_player(@board))
-      display_board(board)
+      display_board
   end
 end
   
