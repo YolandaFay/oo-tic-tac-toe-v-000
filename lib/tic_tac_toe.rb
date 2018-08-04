@@ -35,7 +35,7 @@ class TicTacToe
     puts "Please enter 1-9:"
     user_entry = gets.strip.to_i - 1
   
-     if valid_move?
+     if valid_move?(user_entry)
       move(user_entry,current_player(@board))
       display_board
     else
