@@ -72,7 +72,7 @@ end
   
   def won?
     
-    if empty?
+    if !full?
       return false 
     end
   
