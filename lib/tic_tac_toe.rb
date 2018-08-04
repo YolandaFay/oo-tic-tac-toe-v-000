@@ -70,4 +70,39 @@ end
     end
   end
   
+  def won?(board)
+    
+    if empty?(board)
+      return false 
+    end
+  
+    WIN_COMBINATIONS.each do |win_combo|
+    windex_1 = win_combo[0]
+    windex_2 = win_combo[1]
+    windex_3 = win_combo[2]
+    
+    position_1 = board[windex_1] 
+    position_2 = board[windex_2] 
+    position_3 = board[windex_3] 
+    
+      if (position_1 == "X" && position_2 == "X" && position_3 == "X") || (position_1 == "O" &&   position_2 == "O" && position_3 == "O") 
+        return true
+      end
+    end 
+  return false 
+    
+end
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 end
