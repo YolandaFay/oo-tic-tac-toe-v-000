@@ -36,7 +36,7 @@ class TicTacToe
     user_entry = gets.strip.to_i - 1
   
      if valid_move?(user_entry)
-      move(user_entry,current_player(@board))
+      move(user_entry,current_player)
       display_board
     else
       until valid_move?(user_entry) do
