@@ -94,7 +94,15 @@ end
   end
   
   
+  def full?(board)
   
+   board.each do |entry|
+      if entry == " "
+       return false 
+       end
+      end
+    return true 
+  end
   
   
   
