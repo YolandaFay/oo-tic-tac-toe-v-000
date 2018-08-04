@@ -70,9 +70,9 @@ end
     end
   end
   
-  def won?(board)
+  def won?
     
-    if empty?(board)
+    if empty?
       return false 
     end
   
