@@ -43,7 +43,7 @@ class TicTacToe
        puts "That is not a valid move. Please enter 1-9:"
         user_entry = gets.strip.to_i - 1
       end
-      move(board,user_entry,current_player(board))
+      move(user_entry,current_player(@board))
       display_board(board)
   end
 end
