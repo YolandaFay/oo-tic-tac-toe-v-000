@@ -36,8 +36,8 @@ class TicTacToe
     user_entry = gets.strip.to_i - 1
   
      if valid_move?(entry) 
-      move(user_entry,current_player(board))
-      display_board(board)
+      move(user_entry,current_player(@board))
+      display_board
     else
       until valid_move?(board,user_entry) == true do
        puts "That is not a valid move. Please enter 1-9:"
