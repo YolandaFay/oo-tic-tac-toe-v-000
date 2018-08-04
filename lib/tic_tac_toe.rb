@@ -18,7 +18,7 @@ class TicTacToe
      @index = entry.to_i - 1
   end
   
-  def movecurrent_player)
+  def move(current_player)
     @board[@index] = @current_player
   end
   
