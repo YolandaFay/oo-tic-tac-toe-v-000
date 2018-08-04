@@ -60,7 +60,7 @@ end
   
   
   def current_player
-    player_turn = turn_count(board) + 1
+    player_turn = turn_count + 1
   
     if player_turn % 2 == 0 
       return "O"
