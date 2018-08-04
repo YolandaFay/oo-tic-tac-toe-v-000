@@ -94,9 +94,9 @@ end
   end
   
   
-  def full?(board)
+  def full?
   
-   board.each do |entry|
+   @board.each do |entry|
       if entry == " "
        return false 
        end
